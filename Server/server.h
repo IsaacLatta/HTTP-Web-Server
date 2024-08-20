@@ -9,18 +9,21 @@
 #include <sys/wait.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <signal.h>
 
-#define ERROR 42
-#define LOG 44
+
+#include "threadpool.h"
+#include "http_handler.h"
 
 typedef struct
 {
+    threadpool_t* pool;
     int listenfd;
     struct sockaddr_in addr;
 } server_t;
 
-void _log(int type, char* s1, char* s2, int sockfd);
-void server_run(server_t* server, char* root_dir, int port);
-
+void server_run(server_t* server, int port);
+void server_worker(void* arg);
 
 #endif
