@@ -6,9 +6,9 @@
 - Additionally this web server only supports GET requests.
 - This web server was written with intention of learning more about the HTTP protocol, it is designed to be a simple web server, but it still posses the capability of handling many concurrent HTTTP requests.
 - The server logs all hits to a file titled "web.log" which will be creating upon running in the root directory of the server. Here all requests, headers and errors, both sent and received will be logged.- **Concurrent Handling:** The server can handle many concurrent HTTP requests by utilizing its underlying threadpool, making it efficient and scalable.
-- **Static Content** Capable of serving static content, including HTML, CSS, images and gifs.
-- **Logging** All requests and responses, along with headers and errors are recorded in a file titled 'web.log' for analysis.
-- **Error Handling** Basic error handling for invalid requests, missing files, unsupported methods, and internal server errors are present. The resptive HTTP response is sent to the client when these erros are met.
+- **Static Content:** Capable of serving static content, including HTML, CSS, images and gifs.
+- **Logging:** All requests and responses, along with headers and errors are recorded in a file titled 'web.log' for analysis.
+- **Error Handling:** Basic error handling for invalid requests, missing files, unsupported methods, and internal server errors are present. The resptive HTTP response is sent to the client when these erros are met.
 
 ## Installation
 
