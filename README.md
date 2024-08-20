@@ -35,7 +35,7 @@ gcc -pthread -DVERBOSE -o web-server main.c server.c http_handler.c thtreadpool.
 ```bash
 ./web-server /Path/To/Web-Server 80
 ```
-- Optionally you can run the server as a daemon with the -d option.
+- Optionally you can run the server as a daemon with the -d option:
 ```bash
 ./web-server /Path/To/Web-Server 80 -d
 ```
