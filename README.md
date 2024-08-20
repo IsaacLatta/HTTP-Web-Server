@@ -16,13 +16,13 @@
 
 ## Installation
 
-- To compile the server, ensure you have gcc installed, then run the following commands:
+- To compile the server, ensure you have [gcc](https://gcc.gnu.org/) installed, then run the following commands:
 
-'''bash
+```bash
 gcc -pthread -o web-server main.c server.c http_handler.c threadpool.c util.c
 - Or to view additional logging and updates to stdout compile via:
 
-'''bash 
+```bash 
 gcc -pthread -DVERBOSE -o web-server main.c server.c http_handler.c thtreadpool.c util.c
 
 ## Usage
@@ -31,15 +31,15 @@ gcc -pthread -DVERBOSE -o web-server main.c server.c http_handler.c thtreadpool.
 - NOTE: Some directories are prevented for security measures.
 - Using the provided folder and port 80 for HTTP, run the following command:
 
-'''bash
+```bash
 ./web-server /Path/To/Web-Server 80
 
 - Optionally you can run the server as a daemon with the -d option.
-'''bash
+```bash
 ./web-server /Path/To/Web-Server 80 -d
 
 - To stop the server, kernel signals SIGTERM(14) and SIGINT(2) may be sent to the process close the seserver. These can be sent via control C for SIGINT or the following command for either:
-'''bash 
+```bash 
 pkill -15 web-server
 
 ## Future Improvements 
