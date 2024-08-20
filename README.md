@@ -54,6 +54,10 @@ pkill -15 web-server
 
 - Ensure your firewall has been configured to allow TCP connections on your desired port. Some firewalls may block TCP connections on lower numbered ports, try running with ports > 1025.
 - Additionally the server may be required to run with 'sudo', this is likely due the 'chroot' function call which will change the root directory of the server to the one specified in the command line argument.
+- To see the prohibited directories or other information run with the -h option:
+```bash
+./web-server -h
+```
 
 ## Contributing
 - Contributions are welcome! If you have any suggestions or improvements, feel free to open an issure or submit a pull request.
