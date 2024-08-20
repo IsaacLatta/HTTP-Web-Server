@@ -20,8 +20,9 @@
 
 ```bash
 gcc -pthread -o web-server main.c server.c http_handler.c threadpool.c util.c
-- Or to view additional logging and updates to stdout compile via:
 ```
+- Or to view additional logging and updates to stdout compile via:
+
 ```bash 
 gcc -pthread -DVERBOSE -o web-server main.c server.c http_handler.c thtreadpool.c util.c
 ```
