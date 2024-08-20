@@ -60,4 +60,4 @@ pkill -15 web-server
 ```
 
 ## Contributing
-- Contributions are welcome! If you have any suggestions or improvements, feel free to open an issure or submit a pull request.
+- Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
