@@ -39,7 +39,7 @@ gcc -pthread -DVERBOSE -o web-server main.c server.c http_handler.c thtreadpool.
 ```bash
 ./web-server /Path/To/Web-Server 80 -d
 ```
-- To stop the server, kernel signals SIGTERM(14) and SIGINT(2) may be sent to the process close the seserver. These can be sent via control C for SIGINT or the following command for either:
+- To stop the server, kernel signals SIGTERM(14) and SIGINT(2) may be sent to the process close the server. These can be sent via control C for SIGINT or the following command for either signal number:
 ```bash 
 pkill -15 web-server
 ```
