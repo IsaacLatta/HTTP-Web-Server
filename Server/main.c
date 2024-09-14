@@ -26,7 +26,7 @@ int main(int argc, char** argv)
         print_exit("bad root directory, try running with sudo or -h for help");
     }
 
-    if(argc > 3 && strcmp(argv[3],"-d"))
+    if(argc > 2 && strcmp(argv[3],"-d"))
     {
         pid_t pid = fork();
         if(pid != 0) return 0;
