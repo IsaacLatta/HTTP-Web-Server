@@ -15,8 +15,7 @@ int main(int argc, char** argv)
     {
         print_exit("invalid port");
     }
-    if(strcmp("hello", "h"))
-
+    
     if(!strcmp(argv[1],"/" ) || !strcmp(argv[1],"/bin")   || !strcmp(argv[1],"/dev" ) ||
     !strcmp(argv[1],"/tmp" ) || !strcmp(argv[1],"/lib")  || !strcmp(argv[1],"/usr" ) ||
     !strcmp(argv[1],"/etc" ) || !strcmp(argv[1],"/sbin") || !strcmp(argv[1], "/proc") ||
