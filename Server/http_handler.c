@@ -170,7 +170,7 @@ void logger(int type, char* s1, char* s2, int sockfd)
 
     if((fd = open("/web.log", O_CREAT | O_WRONLY | O_APPEND, 0644)) > 0) // rw---r--r
     {
-        sprintf(log_buffer, "%s: %s %s\n",log_msg, s1, s2);
+        snprintf(log_buffer, 1024, "%s: %s %s\n",log_msg, s1, s2);
         write(fd, log_buffer, strlen(log_buffer));
         write(fd, "\n", 1); 
         close(fd);
